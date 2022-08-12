@@ -5,6 +5,7 @@ import { DotsLoadingAnimation } from "./index";
 const Button = (props) => {
   return (
     <Container
+    data-testid="button-comp"
       type={props.type}
       full={props.full ? props.full : undefined}
       large={props.large ? props.large : undefined}

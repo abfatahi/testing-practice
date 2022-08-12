@@ -22,6 +22,7 @@ const Inputfield = (props) => {
         {props.type === "text" && <FaTasks className="icon" />}
         {props.type === "password" ? (
           <input
+            data-testid="inputFieldPassword"
             name={props.name}
             type={!togglePassword ? "password" : "text"}
             placeholder={props.placeholder}
@@ -30,6 +31,7 @@ const Inputfield = (props) => {
           />
         ) : (
           <input
+            data-testid="inputField"
             name={props.name}
             type={props.type}
             placeholder={props.placeholder}
